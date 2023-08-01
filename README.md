@@ -1,5 +1,5 @@
 # morse-code-translator
-# Defining the Morse code alphabet
+# Defining the Morse code alphabets
 morse_code = {
     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
     '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J',
@@ -19,10 +19,10 @@ def get_input1():
     return input1
 
 # Translating the Morse code to English
-def morse_to_english(input1):
+def morse_to_eng(input1):
     output = []
     for morse_char in input1:
-        eng_char = morse_code.get(morse_char.upper()
+        eng_char = morse_code.get(morse_char.upper())
     # changing the input to uppercase 
         if eng_char:
             output.append(eng_char)
@@ -33,5 +33,5 @@ def morse_to_english(input1):
 # Main program
 if __name__ == "__main__":
     input1 = get_input1()
-    translated_text = morse_to_english(morse_input)
-    print("Translated to English:", translated_text)
+    translation = morse_to_eng(input1)
+    print("Translated to English:", translation)
