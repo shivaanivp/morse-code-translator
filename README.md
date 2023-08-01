@@ -1,5 +1,5 @@
-# morse-code-translator
-# Defining the Morse code alphabets
+# Morse-code-translator
+    # Defining the Morse code alphabets
 morse_code = {
     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
     '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J',
@@ -12,13 +12,13 @@ morse_code = {
     '-....-': '-', '-.--.': '(', '-.--.-': ')'
              }
 
-# Getting the Morse code input from user
+    # Getting the Morse code input from user
 def get_input1():
     print("Enter the Morse code (using dots for '.' and dashes for '-'), separate characters with space:")
     input1 = input().strip().split()
     return input1
 
-# Translating the Morse code to English
+    # Translating the Morse code to English
 def morse_to_eng(input1):
     output = []
     for morse_char in input1:
@@ -30,7 +30,7 @@ def morse_to_eng(input1):
             output.append('[UNKNOWN]')
     return ''.join(output)
 
-# Main program
+    # Main program
 if __name__ == "__main__":
     input1 = get_input1()
     translation = morse_to_eng(input1)
